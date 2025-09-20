@@ -1,2 +1,3 @@
 # City-Traffic-Planner
-Group project: 2D city and traffic planning tool in Scala/JavaFX. Design roads, zones, and land lots, manage traffic rules, calculate fastest routes, verify network quality, visualize road usage, and save/load plans in a custom format.
+This group project transforms the open-source MoVE editor into a 2D city and traffic planning application. Users can draw roads with snapping and intersection handling, create zones and land lots, set traffic regulations, calculate fastest routes, verify network quality, and visualize road usage. The application supports saving and loading plans in a custom format compatible with other programming languages. Designed for modularity, extensibility, and collaborative use.
+
