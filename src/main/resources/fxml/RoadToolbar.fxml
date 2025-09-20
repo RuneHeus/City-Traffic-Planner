@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+
+<?import javafx.scene.control.Button?>
+<ToolBar xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="de.thm.move.controllers.RoadToolbarCtrl">
+    <items>
+        <Label text="RoadType"/>
+        <ChoiceBox fx:id="roadTypeChooser"/>
+        <Button fx:id="OneWayButton" text="Toggle one-way road" onAction="#OneWayAction"/>
+        <Label text="Direction: "/>
+        <Label fx:id="oneWayDirectionLabel" text="N/A"/>
+    </items>
+</ToolBar>

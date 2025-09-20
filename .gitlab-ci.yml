@@ -1,0 +1,25 @@
+stages:
+  - build
+  - test
+
+build-job:
+  stage: build
+  script:
+    - PATH="$JAVA_HOME/bin:$PATH" sbt clean compile
+  tags:
+    - software-engineering
+
+test-job:
+  stage: test
+  variables:
+    # System properties to run GUI tests in headless mode
+    _JAVA_OPTIONS: "-Djava.awt.headless=true -Dtestfx.robot=glass -Dtestfx.headless=true -Dprism.order=sw"
+  script:
+    - PATH="$JAVA_HOME/bin:$PATH" sbt coverage test coverageReport
+  coverage: '/All done\. Coverage was stmt=\[\d+\.\d+%\] branch=\[\d+\.\d+%\]/'
+  tags:
+    - software-engineering
+  artifacts:
+    paths:
+      - target/scala-*/scoverage-report
+    when: always

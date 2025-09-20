@@ -1,0 +1,27 @@
+Used fonts:
+    == Font Awesome ==
+    Created by Dave Gandy
+    License: SIL OFL 1.1 (http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web)
+    Homepage: http://fontawesome.io/
+
+Used sbt-plugins:
+    == sbt-assembly ==
+    License: MIT License (https://github.com/sbt/sbt-assembly/blob/master/LICENSE)
+    Homepage: https://github.com/sbt/sbt-assembly
+
+Used libraries:
+    == scala-parser-combinators ==
+    License: BSD 3-Clause License (https://github.com/scala/scala-parser-combinators/blob/1.0.x/LICENSE.md)
+    Homepage: https://github.com/scala/scala-parser-combinators
+
+    == scala-xml ==
+    License: BSD 3-Clause License (https://github.com/scala/scala-xml/blob/master/LICENSE.md)
+    Homepage: https://github.com/scala/scala-xml
+
+    == ScalaTest ==
+    License: Apache License v2 (http://www.apache.org/licenses/LICENSE-2.0.html)
+    Homepage: http://www.scalatest.org/
+
+    == ReactFX ==
+    License: BSD 2-Clause (https://github.com/TomasMikula/ReactFX/blob/master/LICENSE)
+    Homepage: https://github.com/TomasMikula/ReactFX

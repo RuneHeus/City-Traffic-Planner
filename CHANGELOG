@@ -1,0 +1,92 @@
+======= Version 0.7.1 ==
+==> Features
+- adds menu for recent files (currently for opened files only)
+- adds innternationalization for english & german
+- adds zoom/scale functions and bottom toolbar
+- CLI Interface for opening MoVE through command line
+- new unified input dialogs
+- adds icons in (context-) menus
+- new icons for Polygon & Path tools
+
+==> Bufixes
+- parse class specializations (packages, classes, partials,..)
+
+==> Code improvements
+- update to scala 2.11.8
+- use ReactFX and streams for event processing
+- move package `move.controller.implicits` to `move.implicits`
+- create drawing strategies in `controllers.drawing`
+
+======= Version 0.7.0 ==
+==> New major Features
+- warn if DynamicSelect & Conditional-Values are used in loaded files
+- warn if unsaved changes will be lost
+- warn if some external program changed the loaded file
+- create duplicated/copied shapes at a slightly different position as the original shape
+- move selected shapes using keyboard-arrows
+- set default coordinate-system size to (100,100)
+- remove JavaFX-jar from deployment dependencys
+- project licensed under MPL V2.0
+
+==> Bugfixes
+- fix rotating shapes
+- fix resizing a rotated shape
+- fix several bugs in parser
+- make LICENSE-pane non-editable & use `Ubunut` as font-family
+
+==> Code improvements
+- Implementation of SelectedShapeCtrl splitted into several traits
+- update documentation
+- use ScalaTest as test framework
+- let sbt generate a scala-file containing: project-name, -version, -copyright
+
+======= Version 0.6.0 ==
+==> New major Features
+- Generate "stand-alone" jar for running move from
+    "java -jar" command using the sbt-assembly-plugin
+- Exporting generated Icons as:
+    - SVG
+    - PNG
+- FillPattern now fully supported
+    All FillPatterns (especially FillPattern.Vertical, FillPattern.Horizontal, ..)
+    from Modelica are now supported and can be used
+- Rotate shapes
+    It's now possible to rotate shapes at the edges by double-clicking an element
+
+==> Code improvements
+- Pathlike elements are now implemented using an abstract trait that abstracts over
+    all elements that look-like a path with points (similar to RectangleLike)
+
+
+======= Version 0.5.2 ==
+- The generated  position of shapes is now relative to their origin
+    The origin-point is the middle-point of the shape
+- FillPatterns are now fully supported (e.g: Horizontal, Vertical, Cross, ..)
+- Added Menu for changing the gridsize
+- Smaller bug fixes
+- Refactoring path-like elements:
+    All elements that uses a path under the hood for drawing it's shape can use
+    PathLike to get moving, resizing the element. This removes the duplicated code
+    inside Lines Polygons, Paths, Curved Paths/Polygons drastically and makes them
+    more maintainable.
+- Refactoring package-structure inside views-package:
+    Anchors are now placed inside it's own package
+    Dialogs are now placed inside it's own package
+    Panes are now placed inside it's own package
+
+
+======= Version 0.5.1 ==
+Basically a refactoring, documentation and smaller bug-fixes version.
+- Simplified code-snippets
+- Removed all setLayoutX/Y usages and replaced them with direct
+  positioning the points
+
+
+======= Version 0.5 ==
+All major features and Shapes are working and tested.
+- Un-/Redo features, grouping, multiple selection is implemented.
+- Save existing files while preserving it's source-code
+  (Code that's not Icon/Graphics-related) is working.
+- Snap-to-Grid is working and can be disabled if not needed.
+- Set the paper-size is working
+- copy,paste,duplicate shapes is implemented

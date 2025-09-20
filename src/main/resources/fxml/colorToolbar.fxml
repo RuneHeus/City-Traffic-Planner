@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+
+<ToolBar xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="de.thm.move.controllers.ColorToolbarCtrl">
+    <items>
+        <!-- Zone selectie -->
+        <Label text="Select Zone:" />
+        <ChoiceBox fx:id="zoneChooser" />
+
+        <!-- Dikte van de rand (border thickness) -->
+        <Label text="Border Thickness"/>
+        <ChoiceBox fx:id="borderThicknessChooser"/>
+
+        <Label text="Line Pattern"/>
+        <ChoiceBox fx:id="linePatternChooser"/>
+
+        <Label text="Fill Pattern"/>
+        <ChoiceBox fx:id="fillPatternChooser"/>
+    </items>
+</ToolBar>
